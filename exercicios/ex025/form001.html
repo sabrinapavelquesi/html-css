@@ -15,14 +15,18 @@
     <h1>Meu primeiro formulário</h1>
 
     <!-- action é pra onde os dados digitados no formulário vão ser enviados -->
-
-    <!-- identificadores:
+    
+    <!-- identificadores do input:
     -name: mais útil para HTML e PHP;
     -id: mais útil para JavaScript e uso do label. -->
 
     <!-- uso do label: relacionar o objeto do formulário ao input (etiqueta), uso obrigatório -->
+    
+    <!--Métodos:
+    -get: método padrão, os dados vão aparecer na URL;
+    -post: não aparce na URL-->
 
-    <form action="cadastro.php" autocomplete="off">
+    <form action="cadastro.php" method="post" autocomplete="off">
         <p><label for="inome">Nome: </label>
             <input type="text" name="nome" id="inome"></p>
         <p><label for="isobrenome">Sobrenome:</label> 
