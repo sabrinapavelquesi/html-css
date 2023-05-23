@@ -1,3 +1,9 @@
 @charset 'UTF-8';
 
 /* Configurações de tela em paisagem */
+
+body {
+    background-image: url(../imagens/landscape.png);
+    background-position: left bottom;
+    background-size: cover;
+}

@@ -1,3 +1,9 @@
 @charset 'UTF-8';
 
 /* Configuraões de telas em retrato */
+
+body {
+    background-image: url(../imagens/portrait.png);
+    background-position: center bottom;
+    background-size: cover;
+}
