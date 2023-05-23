@@ -30,5 +30,5 @@ article p {
 }
 
 article::after {
-    content: 'Esse artigo foi impresso pelo site "www.google.com.br"';
+    content: 'Esse artigo foi impresso do site "www.google.com.br"';
 }
