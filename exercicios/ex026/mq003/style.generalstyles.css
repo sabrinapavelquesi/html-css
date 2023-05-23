@@ -1,0 +1,46 @@
+@charset 'UTF-8';
+
+/* declaracões gerais */
+
+@media all {
+    * {
+        margin: 0;
+        padding: 0;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+
+    html,
+    body {
+        width: 100vw;
+        height: 100vh;
+        background-color: rgb(150, 73, 250);
+        background-repeat: no-repeat;
+    }
+
+    h1 {
+        color: whitesmoke;
+        text-shadow: 2px 2px 0px rgb(95, 47, 158);
+        padding: 10px;
+    }
+}
+
+
+/* declaracões portrait */
+
+@media screen and (orientation: portrait) {
+    body {
+        background-image: url(./imagens/portrait.png);
+        background-position: center bottom;
+        background-size: cover;
+    }
+}
+
+/* declaracões landscape */
+
+@media screen and (orientation: landscape) {
+    body {
+        background-image: url(./imagens/landscape.png);
+        background-position: left bottom;
+        background-size: cover;
+    }
+}
