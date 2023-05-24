@@ -1,3 +1,119 @@
 @charset 'UTF-8';
 
 /* Todas as demais mídias */
+
+/* Extra small devices (phones, 600px and down)
+@media only screen and (max-width: 600px) {...} */
+
+/* Small devices (portrait tablets and large phones, 600px and up)
+@media only screen and (min-width: 600px) {...} */
+
+/* Medium devices (landscape tablets, 768px and up) 
+@media only screen and (min-width: 768px) {...} */
+
+/* Large devices (laptops/desktops, 992px and up) 
+@media only screen and (min-width: 992px) {...}  */
+
+/* Extra large devices (large laptops and desktops, 1200px and up) 
+@media only screen and (min-width: 1200px) {...} */
+
+@media only print {
+    * {
+        font-family: 'Courier New', Courier, monospace;
+        font-size: 1.1em;
+    }
+
+    main {
+        border: 2px solid black;
+        width: auto;
+    }
+
+    main::after {
+        content: 'Essa impressão foi feita pelo site de testes';
+        text-decoration: overline;
+    }
+
+    main > h1 {
+        text-shadow: none;
+        color: black;
+    }
+
+    h2::before {
+        content: 'Versão Impressão';
+        color: rgba(0, 0, 0, 0.699);
+        display: block;
+        text-align: center;
+        font-size: 0.8em;
+        text-shadow: none;
+    }
+
+    img#phone {display: none;}
+    img#print {display: block;}
+}
+
+@media screen and (min-width: 600px) {
+    body {
+        background-image: url(../imagens/back-tablet.jpg);
+    }
+
+    main {
+        width: 500px;
+    }
+
+    h2::before {
+        content: 'Versão Tablet';
+        color: rgba(109, 211, 236, 0.699);
+        text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.500);
+        display: block;
+        text-align: center;
+        font-size: 0.5em;
+    }
+
+    img#phone {display: none;}
+    img#tablet {display: block;}
+}
+
+@media screen and (min-width: 992px) {
+    body {
+        background-image: url(../imagens/back-pc.jpg);
+    }
+
+    main {
+        width: 600px;
+    }
+
+    h2::before {
+        content: 'Versão PC';
+        color: rgba(201, 72, 240, 0.651);
+        text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.500);
+        display: block;
+        text-align: center;
+        font-size: 0.5em;
+    }
+
+    img#tablet {display: none;}
+    img#pc {display: block;}
+}
+
+@media screen and (min-width: 1200px) {
+    body {
+        background-image: url(../imagens/back-tv.jpg);
+    }
+
+    main {
+        width: 800px;
+    }
+
+    h2::before {
+        content: 'Versão TV';
+        color: rgba(26, 128, 52, 0.699);
+        text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.500);
+        display: block;
+        text-align: center;
+        font-size: 0.5em;
+    }
+
+    img#pc {display: none;}
+    img#tv {display: block;}
+}
+
