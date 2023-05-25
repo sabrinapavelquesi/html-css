@@ -6,21 +6,46 @@
     padding: 0;
 }
 
-:root [
-    --
-]
+:root {
+    --color0: rgb(80, 130, 0);
+    --color1: rgb(135, 210, 13);
+    --color2: rgb(184, 238, 97);
+    --color3: rgb(104, 167, 3);
+    --color4: rgb(161, 226, 56);
+    --color5: rgb(241, 206, 7);
+    --color6: rgb(183, 114, 211);
+}
+
+body, html {
+    background-color: var(--color2);
+}
 
 header {
-    background-color: #42D45C;
+    background-color: var(--color1);
 }
 
 header h1 { 
     padding: 10px;
     text-align: center;
+    color: var(--color0);
+}
+
+#burger {
+    background-color: var(--color0);
+    color: var(--color5);
+    display: block;    
+    text-align: center;
+    padding: 8px;
+    cursor: pointer;
+}
+
+#burger:hover {
+    background-color: var(--color2);
+    color: var(--color6);
 }
 
 nav {
-    display: block;
+    display: none;
 }
 
 nav > ul {
@@ -32,11 +57,36 @@ nav a {
     padding: 10px;
     text-decoration: none;
     text-align: center;
-    background-color: rgb(50, 155, 50);
-    color: white;
-    border-top: 2px solid rgb(99, 235, 99);
+    background-color: var(--color3);
+    color: var(--color2);
+    border-top: 2px solid var(--color1);
 }
 
 nav a:hover {
-    background-color: rgb(102, 187, 102);
+    background-color: var(--color4);
+    color: var(--color0);
+}
+
+main {
+    width: 90vw;
+    background-color: white;
+    margin: auto;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+article > h2 {
+    color: var(--color5);
+    background-color: var(--color6);
+    padding: 4px;
+    border-radius: 3px;
+}
+
+article > p {
+    text-align: justify;
+    text-indent: 30px;
+    margin-top: 10px;
+    margin-bottom: 20px;
 }
