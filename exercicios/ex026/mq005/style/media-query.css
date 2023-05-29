@@ -22,12 +22,11 @@
         display: none;
     }
 
-    #menu {
-        display: block;
+    nav {
         text-align: center;
     }
 
-    #menu li {
+    nav li {
         display: inline-block;
         width: 121px;
     }

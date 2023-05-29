@@ -44,14 +44,6 @@ header h1 {
     color: var(--color6);
 }
 
-nav {
-    display: none;
-}
-
-nav > ul {
-    list-style-type: none;
-}
-
 nav a {
     display: block;
     padding: 10px;
